@@ -3,7 +3,10 @@ package hexlet.code;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Stream;
 
 public class Data {
@@ -23,7 +26,7 @@ public class Data {
                 .map(string -> string.split(" "))
                 .flatMap(Stream::of)
                 .toList();
-        }
+    }
 
     public static Map<String, String> dataToMap(String filePath) throws Exception {
 
