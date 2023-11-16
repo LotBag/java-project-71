@@ -15,7 +15,7 @@ public class DifferTest {
         String filePath1 = "app/src/test/resources/file1.json";
         String filePath2 = "app/src/test/resources/file2.json";
 
-        try(FileWriter writer = new FileWriter("testExpected", false)) {
+        try (FileWriter writer = new FileWriter("testExpected", false)) {
             String text = generate(filePath1, filePath2);
             writer.write(text);
         }
