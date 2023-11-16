@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'checkstyle'
+    id 'com.adarshr.test-logger' version '4.0.0'
 }
 
 repositories {
