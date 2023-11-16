@@ -5,6 +5,8 @@ import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 import java.util.concurrent.Callable;
 
+import static hexlet.code.Differ.generate;
+
 @CommandLine.Command(name = "gendiff", version = "gendiff very early access",
         description = "Compares two configuration files and shows a difference.", mixinStandardHelpOptions = true)
 public class App implements Callable<String> {

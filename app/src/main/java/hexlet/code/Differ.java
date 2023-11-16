@@ -38,21 +38,22 @@ public class Differ {
             }
         }
 
-        StringBuilder result = new StringBuilder();
+        StringBuilder joinData = new StringBuilder();
 
         for (var key : resultMap.keySet()) {
-            result.append(key)
+            joinData.append(key)
                     .append(" ")
                     .append(resultMap.get(key))
                     .append("\n");
         }
 
-        result = new StringBuilder("{" + result + "}");
+        String result;
+
+        result = "{\n" + joinData.toString().trim() + "\n}";
 
         System.out.println(result);
 
-        return String.valueOf(result);
-
+        return result;
     }
 
 }
