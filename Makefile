@@ -1,2 +1,2 @@
 report:
-   run: cd app && ./gradlew jacocoTestReport
+   make -C app report
