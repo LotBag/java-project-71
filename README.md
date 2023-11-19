@@ -1,8 +1,11 @@
-### Example of package operation: 
-https://asciinema.org/a/vIV0CQymq2gM3fsVnwhromPPU for json files,
-https://asciinema.org/a/hvwBebiHj633lclmQ4U6j5ntS for yml files.
-### Hexlet and My tests and linter status:
-[![Actions Status](https://github.com/LotBag/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LotBag/java-project-71/actions)
-[![Java CI with Gradle](https://github.com/LotBag/java-project-71/actions/workflows/yes.yaml/badge.svg)](https://github.com/LotBag/java-project-71/actions/workflows/yes.yaml)
-<a href="https://codeclimate.com/github/LotBag/java-project-71/maintainability"><img src="https://api.codeclimate.com/v1/badges/e4984bf7b8174be70b27/maintainability" /></a>
-<a href="https://codeclimate.com/github/LotBag/java-project-71/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e4984bf7b8174be70b27/test_coverage" /></a>
+### Hexlet tests and linter status:
+[![hexlet-check](https://github.com/LenaKomarnitskaya/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LenaKomarnitskaya/java-project-71/actions/workflows/hexlet-check.yml)
+[![Java CI](https://github.com/LenaKomarnitskaya/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/LenaKomarnitskaya/java-project-71/actions/workflows/main.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5c00f99a0fb19a59aa8e/maintainability)](https://codeclimate.com/github/LenaKomarnitskaya/java-project-71/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5c00f99a0fb19a59aa8e/test_coverage)](https://codeclimate.com/github/LenaKomarnitskaya/java-project-71/test_coverage)
+![2022-10-04](https://user-images.githubusercontent.com/103958269/196824159-7530230a-6ea7-471a-adee-b1ca991694b0.png)
+![2022-10-08 (1)](https://user-images.githubusercontent.com/103958269/196824319-cac7202d-33bd-487e-a9f4-e1ad2d2034a7.png)
+![2022-10-20](https://user-images.githubusercontent.com/103958269/196824768-5325c02c-322a-4540-b077-d4a80a196013.png)
+![2022-10-20 (1)](https://user-images.githubusercontent.com/103958269/196825032-34d6a83a-1abf-4c03-830e-6cca96245d5f.png)
+![2022-11-06](https://user-images.githubusercontent.com/103958269/200169726-68b3fb1c-074f-40db-a331-8d566b51f826.png)
+![2022-11-06 (1)](https://user-images.githubusercontent.com/103958269/200169731-7f3a5d47-ca41-402d-a5aa-34906e7dd0b0.png)
