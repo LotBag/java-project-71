@@ -1,30 +1,35 @@
 package hexlet.code;
 
 import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
+
 import java.util.concurrent.Callable;
 
-@CommandLine.Command(name = "gendiff", version = "gendiff very early access",
-        description = "Compares two configuration files and shows a difference.", mixinStandardHelpOptions = true)
-public class App implements Callable<String> {
 
-    @Option(names = { "-f", "--format" }, description = "output format [default: stylish]")
-    String format = "stylish";
+@Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
+        description = "Compares two configuration files and shows a difference.")
 
-    @Parameters(paramLabel = "filepath1", index = "0", description = "Path to first file.")
-    static String filepath1;
-    @Parameters(paramLabel = "filepath2", index = "1", description = "Path to second file.")
-    static String filepath2;
+class App implements Callable<Integer> {
+    @Parameters(description = "path to first file.")
+    private String filepath1;
+    @Parameters(description = "path to second file")
+    private String filepath2;
+
+    @Option(names = {"-f", "--format"},
+            description = "output format: stylish, plain, json, no-format [default: ${DEFAULT-VALUE}]",
+            defaultValue = "stylish")
+    private String format;
 
     @Override
-    public String call() throws Exception {
-        return Differ.generate(filepath1, filepath2);
+    public Integer call() throws Exception {
+        System.out.println(Differ.generate(filepath1, filepath2, format));
+        return 0;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
-
 }
