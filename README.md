@@ -1,4 +1,4 @@
-###Example of package operation: 
+### Example of package operation: 
 https://asciinema.org/a/vIV0CQymq2gM3fsVnwhromPPU for json files,
 https://asciinema.org/a/hvwBebiHj633lclmQ4U6j5ntS for yml files.
 ### Hexlet and My tests and linter status:
