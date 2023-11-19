@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Stream;
 
-public class Data {
+public class Parser {
 
     public static String getData(String filepath) throws Exception {
         Path path = Paths.get(filepath.substring(filepath.indexOf("src")));

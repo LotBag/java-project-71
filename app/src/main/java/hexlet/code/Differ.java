@@ -11,8 +11,8 @@ public class Differ {
     static Map<String, String> resultMap = new LinkedHashMap<>();
 
     public static String generate(String filepath1, String filepath2) throws Exception {
-        dataMap1 = Data.dataToMap(filepath1);
-        dataMap2 = Data.dataToMap(filepath2);
+        dataMap1 = Parser.dataToMap(filepath1);
+        dataMap2 = Parser.dataToMap(filepath2);
 
         for (var key : dataMap1.keySet()) {
             if (dataMap2.containsKey(key)) {
