@@ -6,16 +6,12 @@ plugins {
     id 'com.adarshr.test-logger' version '3.2.0'
 }
 
-group = 'hexlet.code'
-version = '1.0.3-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
 
 compileJava {
     options.release = 20
-    options.compilerArgs += ["-Aproject=${project.group}/${project.name}"]
 }
 
 dependencies {

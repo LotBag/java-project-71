@@ -2,6 +2,7 @@ package hexlet.code;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -71,13 +72,16 @@ public class DifferTest {
 
     @Test
     public void testZ() throws Exception {
-        try (FileWriter writer = new FileWriter("actualTest", false)) {
+        File file = new File("src/test/resources/testActual");
+        try (FileWriter writer = new FileWriter(file, false)) {
             String text = Differ.generate(filePath1, filePath2);
             writer.write(text);
         }
+        Path path1 = Path.of("src/test/resources/testActual");
+        Path path2 = Path.of("src/test/resources/expected/expectedTestStylish");
 
-        String actual = Differ.getData("app/src/test/resources/actualTest");
-        String expected = Differ.getData("app/src/test/resources/expected/expectedTestStylish");
+        String actual = Files.readString(path1);
+        String expected = Files.readString(path2);
         assertEquals(expected, actual);
     }
 }
