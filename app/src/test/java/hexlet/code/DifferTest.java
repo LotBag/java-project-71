@@ -2,7 +2,6 @@ package hexlet.code;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
