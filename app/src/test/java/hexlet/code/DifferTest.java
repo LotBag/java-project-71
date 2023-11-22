@@ -19,7 +19,7 @@ public class DifferTest {
     private final String filePath4 = "src/test/resources/testFile2.yml";
 
     private final Path pathStylish =
-            Paths.get("src/test/resources/expected/expectedTestStylish").toAbsolutePath().normalize();;
+            Paths.get("src/test/resources/expected/expectedTestStylish").toAbsolutePath().normalize();
     private final Path pathPlain =
             Paths.get("src/test/resources/expected/expectedTestPlain").toAbsolutePath().normalize();
     private final Path pathJson =

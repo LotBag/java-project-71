@@ -45,6 +45,7 @@ jacocoTestReport {
 checkstyle {
     toolVersion '9.2.1'
 }
+
 application {
     mainClass = 'hexlet.code.App'
 }
