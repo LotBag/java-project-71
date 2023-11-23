@@ -8,6 +8,7 @@ Application compares two files and shows a difference. Usable formats: json and 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e4984bf7b8174be70b27/maintainability)](https://codeclimate.com/github/LotBag/java-project-71/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e4984bf7b8174be70b27/test_coverage)](https://codeclimate.com/github/LotBag/java-project-71/test_coverage)
 
+### Example of application operation
 #### ./build/install/app/bin/app -h
 https://asciinema.org/a/YrwjpT9ez1sPAFxaBi2ThFnBf
 
