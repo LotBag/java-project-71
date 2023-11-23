@@ -30,7 +30,7 @@ public class DifferTest {
 
     @Test
     public void defaultTest1() throws Exception {
-        String expected =Files.readString(pathStylish);
+        String expected = Files.readString(pathStylish);
         assertEquals(expected, Differ.generate(filePath1, filePath2));
     }
 
