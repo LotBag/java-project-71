@@ -11,13 +11,13 @@ public class Differ {
         String data1 = getData(pathfile1);
         String data2 = getData(pathfile2);
 
-        String fileType1 = getFType(pathfile1);
-        String fileType2 = getFType(pathfile2);
+        String fileType1 = getFileType(pathfile1);
+        String fileType2 = getFileType(pathfile2);
 
         Map<String, Object> map1 = Parser.parser(data1, fileType1);
         Map<String, Object> map2 = Parser.parser(data2, fileType2);
 
-        List<Map<String, Object>> result = GenDifference.differ(map1, map2);
+        List<Map<String, Object>> result = DifferenceGenerator.differ(map1, map2);
 
         return Formatter.formatStyle(result, format);
     }
@@ -30,7 +30,7 @@ public class Differ {
         return Files.readString(path);
     }
 
-    public static String getFType(String filepath) {
+    public static String getFileType(String filepath) {
         return filepath.substring(filepath.indexOf(".") + 1);
     }
 
